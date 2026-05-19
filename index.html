@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf8" />
+  <title>Bluetooth Cubing</title>
+  <link href="css/cubing.css" rel="stylesheet" type="text/css" />
+  <script src="js/cubing.js" href="./index.ts" type="module"></script>
+</head>
+
+<body>
+  <div id="controls">
+    <h2>Bluetooth Cubing</h2>
+    <button id="connect">Connect</button>
+    <br />
+    <label for="acceptAllDevices"><input type="checkbox" id="acceptAllDevices" /> Accept all
+      devices</label>
+
+    <h3>Patterns</h3>
+    <button id="player-pattern-reset" disabled>Reset player pattern</button>
+
+    <h3>Move to target</h3>
+    <button onclick="generateAlgorithm('UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB')">Solved</button>
+
+    <h3>Required Moves</h3>
+    <div id="algorithmOutput"></div>
+
+    <h3>Moves</h3>
+  </div>
+  <div id="player"></div>
+</body>
+
+</html>
